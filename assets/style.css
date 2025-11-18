@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 :root{
   --bg:#f7f7fb;
   --card:#ffffff;
