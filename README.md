@@ -1,8 +1,3 @@
----
-layout: default
-title: ruoruoliu
----
-
 # Welcome
 
 Hi — this is a Jekyll starter page for your GitHub Pages site. Replace this text with your own bio, projects, or blog links.
