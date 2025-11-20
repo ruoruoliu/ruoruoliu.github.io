@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <button class="menu">&#9776;</button>
         <h1>Welcome to Ruoruoliu's Blog</h1>
         <nav>
             <ul>
@@ -17,27 +18,53 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="about">
             <h2 style="color: blue;">About Me</h2>
-            <p>Hello! I'm Ruoruoliu, a passionate blogger who loves to share insights on various topics including technology, travel, and lifestyle. Stay tuned for exciting content!</p>
-            <ul>
-                <li>Technology</li>
-                <li>Travel</li>
-                <li>Lifestyle</li>
-            </ul>
+            <div class ="container">
+                <div class="intro">
+                    <p>Hello! I'm Ruoruoliu,<br> a passionate blogger who loves to share insights on various topics including technology, travel, and lifestyle. <br>Stay tuned for exciting content!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Technology</li>
+                        <li>Travel</li>
+                        <li>Lifestyle</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section>
-            <h2>Others</h2>
-            <p><strong>Bye</strong></p>
-            <p><em>Bye</em></p>
-            <blockquote cite="https://ruoruoliu.github.io/hugo-blog/weekly/week3/index.html">是不是到了说，<br>再见的时候</blockquote>
+            <img src="images/bird.jpg" alt="bird" width="100%">
+            <img src="images/ox.jpg" alt="ox" width="100%">
+            <img src="images/people.jpg" alt="people" width="100%">
         </section>
-        <p><a href="page.html">Go to Page</a></p>
-        <p><a href="#">Go Die</a></p>
-        <img src="images/favicon.png" alt="我的头像" width="300" height="300">
+        <section class="others">
+            <div class="bye">
+                <p><strong>Bye</strong></p>
+                <p><em>Bye</em></p>
+            </div>
+            <div class="say-bye">
+                <blockquote cite="https://ruoruoliu.github.io/hugo-blog/weekly/week3/index.html">是不是到了说，<br>再见的时候</blockquote>
+            </div>
+        </section>
+        <section class="go">
+            <p><a href="page.html">Go to Page</a></p>
+            <p><a href="#">Go Back</a></p>
+        </section>
+        <section class="newsletter">
+            <p>Subscribe to My Newsletter</p>
+            <form action="#" method="post">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="liuyujia@abc.com" id="email" name="email" required>
+                <button type="submit">hello and Subscribe</button>
+                <!-- <input type="submit" value="Subscribe"> -->
+            </form>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Ruoruoliu's Blog. All rights reserved.</p>
+        <p>
+            <img src="images/favicon.png" alt="我的头像" width="24px" height="24px"> &copy; 2024 Ruoruoliu's Blog. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
