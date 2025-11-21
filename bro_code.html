@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png">
+    <title>Bro Code</title>
+    <link rel="stylesheet" href="bro_code.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Bro Code</div>
+    </header>
+    <hr>
+    <main>
+        <h1 style="background: tomato;">Welcome to Bro Code</h1>
+        <p><span style="background: cyan;">This is a sample webpage for Bro Code.</span></p>
+        <!-- More content can be added here -->
+        <p>good for the ghost</p>
+        <audio src="audios/good for the ghost - Alge.mp3" controls autoplay muted></audio>
+        <br>
+        <video src="audios/sample.mp4" height="400px" controls></video>
+        
+        <video height="400px" controls>
+            <source src="audios/sample.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <table border="3" style="border: 3px solid green; text-align: center; width: 1000px;">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+            <tr>
+                <td>Data 3</td>
+                <td>Data 4</td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="navigateToPage()" style="cursor: pointer; border-radius: 5px;">click me to Page!</button>
+        <button onclick="greeting()" style="cursor: pointer; border-radius: 5px;">Greet!!!</button>
+        <p id="greeting">hello!!!</p>
+
+        <hr>
+        <p>This is only for demo, not functional</p>
+        <form action="index.php" method="POST" style="background-color: cyan">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="ruoruoliu" minlength="6" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="sex">sex</label>
+            <input type="radio" id="male" value="male" name="sex">
+            <label for="male">male</label>
+            <input type="radio" id="female" value="female" name="sex">
+            <label for="female">female</label>
+            <br><br>
+            <label for="salary">salary</label>
+            <select name="salary" id="salary">
+                <option value="0-1000">$0-$1000</option>
+                <option value="1000-5000">$1000-$5000</option>
+                <option value="5000+">$5000+</option>
+            </select>
+            <br><br>
+            <label for="comment">comment:</label>
+            <textarea name="comment" id="comment" cols="30" rows="3" placeholder="your comment here..."></textarea>
+            <br><br>
+            <input type="submit" value="Login">
+            <br><br>
+            <input type="reset" value="Reset">
+            
+        </form>
+        <hr>
+
+        <p class="box" id="box1">box1</p>
+        <p class="box" id="box2">box2</p>
+        
+        <hr>
+        <div class="bro_code_bottom">
+            <a href="mailto:liuyujia.victor@gmail.com">Email Me</a>
+            <br>
+            <a href="index.html">Go Back</a>
+        </div>
+        <script>
+            function navigateToPage() {
+                window.location.href = "page.html";
+            }
+            // document.querySelector("button").addEventListener("click", navigateToPage);
+            function greeting() {
+                document.getElementById("greeting").innerText = "Hello, Bro!";
+            }
+        </script>
+    </main>
+</body>
+</html>
