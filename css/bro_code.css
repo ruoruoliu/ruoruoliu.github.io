@@ -23,6 +23,7 @@
     font-weight: bold;
     padding: 8px 8px;
     display: inline;
+    transition: background-color 1s, color 1s;
 }
 
 .nav a:hover {
