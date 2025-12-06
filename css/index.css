@@ -9,15 +9,20 @@ header, section {
     margin: 0px;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
     width: 100%;
     position: fixed;
     top: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 header ul {
-    position: absolute;
-    right: 5vw;
-    top: 0;
+    /* position: absolute; */
+    /* right: 5vw; */
+    /* top: 0; */
     line-height: 100px;
 }
 header li {
@@ -34,16 +39,32 @@ header a:hover {
 }
 h1 {
     position: absolute;
-    color: red;
-    left: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 0;
+    max-width: 60%; /* 防止与两侧元素重叠 */
+    color: red;
+    font-size: 18px;
+    /* left: 20px; */
+    /* top: 0; */
     /* padding: 10px; */
     /* margin: 10px; */
     line-height: 100px;
-    background-image: url(images/favicon.png);
+    background-image: url(../images/favicon.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
+    padding-left: 60px; /* 给图片留出空间 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#timeContainer {
+    width: 200px; /* 给时间一个固定宽度，防止挤压中间的标题 */
+}
+#time {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 body {
     padding-top: 110px;
@@ -173,7 +194,7 @@ footer img {
 }
 
 /* 响应式设计语法 */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     header ul {
         display: none;
     }
@@ -205,3 +226,10 @@ footer img {
         width: 100%;
     }
 }
+
+/* 响应式设计语法：当屏幕过小时，time不显示 */
+@media (max-width: 600px) {
+    #timeContainer {    
+        display: none;
+    }
+}   
